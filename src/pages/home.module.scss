@@ -1,1 +1,54 @@
-// TODO
+.post {
+  max-width: 700px;
+  margin: 4.0630rem 0;
+
+  a {
+    display: block;
+
+    & + a {
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-700);
+    }
+
+    strong {
+      font-size: 1.75rem;
+      margin-top: 1rem;
+      line-height: 2rem;
+      transition: color 0.2s;
+    }
+
+    p {
+      color: var(--gray-50);
+      font-size: 1.125rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.625rem; //22px
+    }
+
+    time {
+      font-size: 1rem;
+      display: inline;
+      color: var(--gray-100);
+    }
+
+    span {
+      color: var(--gray-100);
+      margin-left: 1.5rem;
+    }   
+
+    &:hover strong {
+      color: var(--pink);
+    }
+  }
+
+  button {
+    color: var(--pink);
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 4rem;
+    
+  }
+}
